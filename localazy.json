@@ -1,0 +1,39 @@
+{
+    "writeKey": "a7284890365751335643-a469907443621573dd285898b04db5d0203ff466880470cb6685d8dca9ecd3d7",
+    "readKey": "a7284890365751335643-b0fe58418368bcc52825b9ac31e13c193d8c4ba858528a4cf704904e69402a9d",
+    
+    "upload": {
+      "type": "json",
+      "files": [
+        "src/locales/en/messages.json",
+        "src/locales/en/dashboard.json",
+        "src/locales/en/views.json"
+      ]
+    },
+    
+    "upload existing": {
+      "type": "json",
+      "files": [
+        "src/locales/${lang}/messages.json",
+        "src/locales/${lang}/dashboard.json",
+        "src/locales/${lang}/views.json"
+      ]
+    },
+    
+    "download": {
+      "files": "src/locales/${lang}/${file}.json"
+    },
+    
+    "plural": {
+      "enabled": true,
+      "format": "icu"
+    },
+    
+    "api": {
+      "baseUrl": "https://testing.localazy.com",
+      "httpAuth": {
+        "user": "guest",
+        "password": "psnb2kd"
+      }
+    }
+  }
