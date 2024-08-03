@@ -1,5 +1,6 @@
 {
   "plural[one]": "Máte 1 položku.",
+  "plural[few]": "Máte X položky.",
   "plural[other]": "Máte X položek.",
   "text": "Text",
   "title": "Titul"

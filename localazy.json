@@ -1,29 +1,25 @@
 {
-    "writeKey": "a7284879554472573867-f8766b7b71be2befab8667aa8c40f2116d48c26c920756dac74ec87fef773f4f",
-    "readKey": "a7284879554472573867-7856dc8c794f606b1291e227d7613fdd300c4ae92e1af7185e4b9bd65b7aff48",
+  "writeKey": "a7284879554472573867-f8766b7b71be2befab8667aa8c40f2116d48c26c920756dac74ec87fef773f4f",
+  "readKey": "a7284879554472573867-7856dc8c794f606b1291e227d7613fdd300c4ae92e1af7185e4b9bd65b7aff48",
   
-    "upload": {
-      "type": "json",
-      "files": [
-        {
-          "pattern": "src/locales/en/*.json",
-          "lang": "en"
-        },
-        {
-          "group": "existing",
-          "pattern": "src/locales/de/*.json",
-          "lang": "de"
-        },
-        {
-          "group": "existing",
-          "pattern": "src/locales/cs/*.json",
-          "lang": "cs"
-        }
-      ]
-    },
+  "upload": {
+    "type": "json",
+    "files": [
+      {
+        "pattern": "src/locales/en/*.json",
+        "lang": "en"
+      },
+      {
+        "group": "existing",
+        "pattern": "src/locales/*/*.json",
+        "excludes": ["**/en/*.json"],
+        "lang": "${autodetectLang}"
+      }
+    ]
+  },
   
-    "download": {
-    "includeSourceLang": true,
-    "files": "downloads/${lang}/${file}"
+  "download": {
+    "includeSourceLang": false,
+    "files": "src/locales/${lang}/${file}.json"
   }
-  }
+}
