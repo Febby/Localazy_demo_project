@@ -1,6 +1,5 @@
 {
-  "plural[one]": "Sie haben 1 Artikel.",
-  "plural[other]": "Sie haben X Artikel.",
+  "plural": "{count, plural, one {Sie haben 1 Artikel.} other {Sie haben # Artikel.}}",
   "text": "Text",
   "title": "Titel"
 }
