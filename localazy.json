@@ -8,14 +8,14 @@
       {
         "pattern": "src/locales/en/*.json",
         "lang": "en",
-        "features": ["plural_icu"]
+        "features": ["plural_postfix_br"]
       },
       {
         "group": "existing",
         "pattern": "src/locales/*/*.json",
         "excludes": ["**/en/*.json"],
         "lang": "${autodetectLang}",
-        "features": ["plural_icu"]  
+        "features": ["plural_postfix_br"] 
       }
     ]
   },

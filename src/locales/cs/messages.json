@@ -1,5 +1,7 @@
 {
-  "plural": "{count, plural, one {Máte 1 položku.} few {Máte # položky.} other {Máte # položek.}}",
+  "title": "Titul",
   "text": "Text",
-  "title": "Titul"
+  "plural[one]": "Máte 1 položku.",
+  "plural[few]": "Máte X položky.",
+  "plural[other]": "Máte X položek."
 }
